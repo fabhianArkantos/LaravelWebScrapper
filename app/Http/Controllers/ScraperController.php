@@ -20,8 +20,8 @@ class ScraperController extends Controller
 
         });
 
-        dump($productList);
 
-        //return view('scraper');
+
+        return view('scraper')->with('productList', $productList);
     }
 }
